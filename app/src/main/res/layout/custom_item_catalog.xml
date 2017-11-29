@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlCategoria"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imCategory"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp" />
+
+    <TextView
+        android:id="@+id/txNameCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imCategory"
+        android:layout_toEndOf="@+id/imCategory"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="8dp"
+        android:text="ИНТЕРКАНТЕНЕТАЛЬ" />
+
+    <TextView
+        android:id="@+id/txTypeCatrgory"
+        android:textSize="11sp"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imCategory"
+        android:layout_toEndOf="@+id/imCategory"
+        android:layout_below="@+id/txNameCategory"
+        android:text="Гостиницы" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars = "5"
+        android:rating   = "0"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imCategory"
+        android:layout_toEndOf="@+id/imCategory"
+        android:layout_below="@+id/txTypeCatrgory"/>
+
+    <TextView
+        android:id="@+id/txSum"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txNameCategory"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="20.000 Р" />
+
+    <TextView
+        android:id="@+id/txSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/txTypeCatrgory"
+        android:text="20 %" />
+</RelativeLayout>
